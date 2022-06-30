@@ -80,7 +80,21 @@
       let img7 = document.createElement('img')
       img7.src = 'https://picsum.photos/200'
       document.querySelector('.left-content').appendChild(img7).classList.add('small-image')
-      // 
+      // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      let arrayListaUmAdez = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      let ulUmADez = document.createElement('ul')
+      document.querySelector('.right-content').appendChild(ulUmADez).classList.add('ulUmAdez')
+      let queryUl = document.querySelector('.ulUmAdez')
+      for (let index = 0; index < arrayListaUmAdez.length; index += 1) {
+        let palavra = arrayListaUmAdez[index]
+        queryUl.appendChild(document.createElement('li')).innerText = palavra 
+      }  
+      // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2
+      let queryH3 = document.querySelector('.main-content')
+      for (let index = 0; index < 3; index += 1) {
+        let h3 = document.createElement('h3')
+        queryH3.appendChild(h3).innerText
+      }
     </script>
   </body>
 </html>
